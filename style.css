@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /* border: 5px solid orangered; */
+    background: rgb(255, 98, 0);
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 10000;
+}
+
+.header > img{
+    height: 70px;
+    width: 70px;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    width: 50%;
+    padding: 10px;
+
+}
+.navbar > a{
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none; 
+    /* color: aliceblue; */
+    color: rgb(99, 48, 0);
+    font-weight: 600;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+.navbar > a:hover{
+    color: rgb(255, 255, 255);
+}
+.home-btn{
+    background-color: orangered;
+    border-radius: 10px;
+}
+
+.restaurant-list{
+    display: flex;
+    padding: 20px;
+    background: whitesmoke;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 280px;
+    width: 265px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    /* border: 2px solid black; */
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Ensures the scaled content doesn't overflow the card */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.image-container {
+    position: relative;
+    width: 259px;
+    height: 172px;
+    /* Ensure the container takes the same size as your image if needed */
+}
+
+.fade-box {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    /* Match border-radius if your image has one */
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    pointer-events: none; /* Allows clicking through if needed */
+}
+
+
+.card >div> img{
+    height: 172px;
+    width: 259px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+
+}
+
+.card >h2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.card >h3{
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+.card >h4{
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.7rem;
+}
+
+.footer{
+    padding: 40px;
+}
+
+.shimmer-container{
+    display: flex;
+    padding: 20px;
+    background: whitesmoke;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shimmer-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 280px;
+    width: 265px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    /* border: 2px solid black; */
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Ensures the scaled content doesn't overflow the card */
+}
+
+.shimmer-image {
+    position: relative;
+    width: 259px;
+    height: 172px;
+    background: #dedede;
+    /* Ensure the container takes the same size as your image if needed */
+}
+
+
+.shimmer-image{
+    height: 172px;
+    width: 259px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    /* border: 2px solid red; */
+
+}
+.shimmer-title, .shimmer-desc{
+    height: 20px;
+    width: 100%;
+    background: #dedede;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.no-restaurants {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 500px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+.authenticate-btn{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    color:black;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.error-page{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    background: #f8f8f8;
+}
+
+.error-page > h1{
+    font-size: 3rem;
+    font-weight: 700
+    ;
+}
+.error-page > h2{
+    font-size: 1.5rem;
+    font-weight: 200
+    ;
+}
+
+.error-page  *{
+    padding: 10px;
+}
+
+.res-menu-banner{
+    height: 400px;
+}
+
+.menu-items{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+}
